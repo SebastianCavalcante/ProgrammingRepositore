@@ -17,6 +17,6 @@ public class MoveForward : MonoBehaviour
 
     void OnMove()
     {
-        
+        transform.Translate(Vector3.forward * (speedMoviment * Time.deltaTime));
     }
 }
