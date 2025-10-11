@@ -5,10 +5,13 @@ public class PlayerFire : MonoBehaviour
     [SerializeField] private GameObject bullet;
     [SerializeField] private Transform firePoint;
 
-    // Update is called once per frame
+    [SerializeField] private AudioSource weaponAudioSource;
+    [SerializeField] private AudioClip shotAudioClip;
+    [SerializeField] private AudioClip reloadAudioClip; // Update is called once per frame
     void Update()
     {
         OnFire();
+        OnReload();
     }
 
     void OnFire()
@@ -22,6 +25,15 @@ public class PlayerFire : MonoBehaviour
     void CreateNewBullet()
     {
         Instantiate(bullet, firePoint.position, bullet.transform.rotation);
+        weaponAudioSource.PlayOneShot(shotAudioClip);
+    }
+
+    void OnReload()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            weaponAudioSource.PlayOneShot(reloadAudioClip);
+        }
     }
     
 }
