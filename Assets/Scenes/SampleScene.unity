@@ -802,6 +802,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 867d4e512be073648826357305ae0df1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1311392521}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 867d4e512be073648826357305ae0df1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1311392523}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 867d4e512be073648826357305ae0df1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1311392524}
   m_SourcePrefab: {fileID: 100100000, guid: 867d4e512be073648826357305ae0df1, type: 3}
 --- !u!1 &1299094919
 GameObject:
@@ -930,6 +936,54 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedMoviment: 2
+--- !u!65 &1311392523
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311392520}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.5254568, y: 1.6855919, z: 0.63365644}
+  m_Center: {x: 0.017953336, y: 0.79698455, z: 0.18317178}
+--- !u!54 &1311392524
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311392520}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1482260299 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 99fcce1f10b2ebd4a8cd31a345f6bed8, type: 3}
