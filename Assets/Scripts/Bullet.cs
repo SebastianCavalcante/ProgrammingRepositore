@@ -13,14 +13,8 @@ public class Bullet : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector3.down * (speed * Time.deltaTime));
+        
     }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject != null)
-        {
-            Destroy(gameObject);
-            Destroy(other.gameObject);
-        }
-    }
+    
+    
 }
